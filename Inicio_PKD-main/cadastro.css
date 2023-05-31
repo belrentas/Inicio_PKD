@@ -1,0 +1,544 @@
+/*HEADER-GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+}
+
+body{
+
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+
+}
+
+.perfil{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: pointer;
+
+}
+
+.logo{
+
+    width: 13%;
+    padding-left: 10px;
+
+}
+
+.navheader{
+
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.listab{
+
+    list-style: none;
+
+}
+
+.navheader, .listab{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+li{
+
+    padding: 0 5px;
+
+}
+
+/*VARIAVEIS-BTN*/
+
+:root{
+
+    --cor-primaria-inicio : transparent;
+    --cor-hover-inicio : #fdeaed;
+    --cor-secundaria-inicio : #FFC0CB;
+
+    --cor-primaria-agendamento : transparent;
+    --cor-hover-agendamento : #fdeaed;
+    --cor-secundaria-agendamento : #FFC0CB;
+
+    --cor-primaria-cadastro : transparent;
+    --cor-hover-cadastro : #fdeaed;
+    --cor-secundaria-cadastro : #FFC0CB;
+
+    --cor-primaria-login : transparent;
+    --cor-hover-login : #fdeaed;
+    --cor-secundaria-login : #FFC0CB;
+
+}
+
+
+/*BTN-CONFIG GERAL*/
+
+.btn{
+
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 16px;
+    height: 77px;
+    width: 110px;
+
+}
+
+
+/*BTN-INICIO*/
+
+.btn-inicio{
+
+    background-color: var(--cor-primaria-inicio);
+    outline: none;
+    color: var(--cor-secundaria-inicio);
+
+}
+
+.btn-inicio:hover{
+
+    background-color: var(--cor-hover-inicio);
+
+}
+
+.btn-inicio:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-inicio);
+
+}
+
+/*BTN-AGENDAMENTO*/
+
+.btn-agendamento{
+
+    background-color: var(--cor-primaria-agendamente);
+    outline: none;
+    color: var(--cor-secundaria-agendamento);
+
+}
+
+.btn-agendamento:hover{
+
+    background-color: var(--cor-hover-agendamento);
+
+}
+
+.btn-agendamento:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-agendamento);
+
+}
+
+/*BTN-CADASTRO*/
+
+.btn-cadastro{
+
+    background-color: var(--cor-primaria-cadastro);
+    outline: none;
+    color: var(--cor-secundaria-cadastro);
+
+}
+
+.btn-cadastro:hover{
+
+    background-color: var(--cor-hover-cadastro);
+
+}
+
+.btn-cadastro:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-cadastro);
+
+}
+
+/*BTN-LOGIN*/
+
+.btn-login{
+
+    background-color: var(--cor-primaria-login);
+    outline: none;
+    color: var(--cor-secundaria-login);
+
+}
+
+.btn-login:hover{
+
+    background-color: var(--cor-hover-login);
+
+}
+
+.btn-login:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-login);
+
+}
+
+/*FIM DA HEADER*/
+/* ------------------------------INCIO DO CORPO-------------------------------*/
+.cadastro{
+
+    display: flex;
+    justify-content: center;
+}
+.box_cadastro{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    width: 650px;
+    height: 1193px;
+    border-radius: 41px;
+    top: 130px;
+}
+.txt_cdt{
+    position: absolute;
+    padding: 80px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #560F47; 
+}
+.icon_gg{
+    margin: 60px;
+}
+.list_cdt{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-top: 130px;
+}
+.img_fc_cdt{
+    width: 60px;
+    height: 60px;
+}
+.img_gg_cdt{
+    width: 68px;
+    height: 68px;
+}
+.img_app_cdt{
+    width: 60px;
+    height: 60px;
+}
+.linha{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    list-style: none;
+    
+    padding: 20px;
+}
+.linha_1{
+    width: 209px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+.linha_2{
+    width: 209px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+#ou{
+    margin-top: -15px;
+    font-weight: 400;
+    font-size: 24.0519px;
+    line-height: 28px;
+    color: #000000;
+}
+.position_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #787778;
+}
+.blocos_cadastro{
+    list-style: none;
+}
+.name_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+.gen_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+.dt_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+
+.cpf_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+
+.rg_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+
+.tl_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+
+.em_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+.end_fc{
+    width: 543px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #787778;
+    border-radius: 41px;
+    padding-left: 15px;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #787778;
+}
+.enviar_cd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.btn_cadastro{
+    width: 291.32px;
+    height: 56px;
+    background-color: #FF7B92;
+    border-radius: 41px;
+    border-style: none;
+    font-weight: 400;
+    font-size: 24.0519px;
+    line-height: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+.btn_cadastro:hover{
+    background-color: #faabb8;
+    transition: .3s;
+}
+/*------------------------------------------INICIO DO FOOTER------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 328px;
+    top: 1500px;
+    background-color: #FF8EA2;
+}
+/*lista dos sobre nos, siga-nos, contato*/
+.li_ft{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    top: 30px;
+    font-weight: 40;
+    font-size: 32px;
+    line-height: 38px;
+    color: #560F47;
+}
+/*texto sobre nos*/
+.txt_sobre_nos{
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    margin-left: 260px;
+    top: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+/*imagem sobre nos*/
+.img_sobre_nos{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    margin-left: 50px;
+}
+/*lista dos @pink diamond*/
+.a_s{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    left: 890px;
+    padding: 5px;
+    justify-content: space-around;
+    font-weight: 40;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+    top: 90px;
+}
+/* o prof q fex n sei oq é k*/
+.container{
+    min-height: 100vh;
+    position: relative;
+}
+/* posiçao das redes sociais*/
+.rede_rd{
+    list-style: none;
+    position: relative;
+}
+/*posiçao das imagens para os links*/
+.links_rd{
+    position: absolute;
+    top: 80px;
+    left: 830px;
+}
+/* tamanho das imagens*/
+.img_rd_face{
+    width: 60px;
+    height: 60px;
+}
+/* tamanho das imagens*/
+.img_rd_insta{
+    width: 60px;
+    height: 60px;
+}
+/* tamanho das imagens*/
+.img_rd_tt{
+    width: 60px;
+    height: 60px;
+}
+/*Posiçao da área dos contatos*/
+.contato{
+    position: absolute;
+    display: flex;
+    width: 27%;
+    height: 30px;
+    margin-left: 67%;
+    padding: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+/*Posição da lista de contatos*/
+.lista-cntt{
+    list-style: none;
+}
+/*ajuste dos tamanho do icone*/
+.local{
+    width: 25px;
+    height: 25px;
+}
+/*ajuste dos tamanho do icone*/
+.telefone{
+    width: 25px;
+    height: 25px;
+}
+/*ajuste dos tamanho do icone*/
+.email{
+    width: 25px;
+    height: 25px;
+}

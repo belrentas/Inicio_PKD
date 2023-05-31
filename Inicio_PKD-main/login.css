@@ -1,0 +1,488 @@
+/*HEADER-GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    
+}
+
+body{
+
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+
+}
+
+.perfil{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: pointer;
+
+}
+
+.logo{
+
+    width: 13%;
+    padding-left: 10px;
+
+}
+
+.navheader{
+
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.listab{
+
+    list-style: none;
+
+}
+
+.navheader, .listab{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+li{
+
+    padding: 0 5px;
+
+}
+
+/*VARIAVEIS-BTN*/
+
+:root{
+
+    --cor-primaria-inicio : transparent;
+    --cor-hover-inicio : #fdeaed;
+    --cor-secundaria-inicio : #FFC0CB;
+
+    --cor-primaria-agendamento : transparent;
+    --cor-hover-agendamento : #fdeaed;
+    --cor-secundaria-agendamento : #FFC0CB;
+
+    --cor-primaria-cadastro : transparent;
+    --cor-hover-cadastro : #fdeaed;
+    --cor-secundaria-cadastro : #FFC0CB;
+
+    --cor-primaria-login : transparent;
+    --cor-hover-login : #fdeaed;
+    --cor-secundaria-login : #FFC0CB;
+
+}
+/*BTN-CONFIG GERAL*/
+.btn{
+
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    height: 77px;
+    width: 110px;
+
+}
+/*BTN-INICIO*/
+
+.btn-inicio{
+    background-color: var(--cor-primaria-inicio);
+    outline: none;
+    color: var(--cor-secundaria-inicio);
+}
+
+.btn-inicio:hover{
+    background-color: var(--cor-hover-inicio);
+}
+
+.btn-inicio:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-inicio);
+}
+
+/*BTN-AGENDAMENTO*/
+
+.btn-agendamento{
+    background-color: var(--cor-primaria-agendamente);
+    outline: none;
+    color: var(--cor-secundaria-agendamento);
+}
+
+.btn-agendamento:hover{
+    background-color: var(--cor-hover-agendamento);
+}
+
+.btn-agendamento:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-agendamento);
+}
+
+/*BTN-CADASTRO*/
+
+.btn-cadastro{
+    background-color: var(--cor-primaria-cadastro);
+    outline: none;
+    color: var(--cor-secundaria-cadastro);
+}
+
+.btn-cadastro:hover{
+    background-color: var(--cor-hover-cadastro);
+}
+
+.btn-cadastro:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-cadastro);
+}
+
+/*BTN-LOGIN*/
+
+.btn-login{
+    background-color: var(--cor-primaria-login);
+    outline: none;
+    color: var(--cor-secundaria-login);
+}
+
+.btn-login:hover{
+    background-color: var(--cor-hover-login);
+}
+.btn-login:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-login);
+}
+/*FIM DA HEADER*/
+/*-------------------------------------CORPO----------------------------------------*/
+/*div do login*/
+.b_login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*Caixa branca do login*/
+.box_login{
+    display: flex;
+    position: absolute;
+    width: 343px;
+    height: 679px;
+    top: 124px;
+    background-color: #fff;
+    border-radius: 41px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*texto do login*/
+.txt_lg{
+    position: absolute;
+    top: 250px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+}
+
+/*espaço das caixas de texto*/
+.space_lg{
+    display: flex;
+    justify-content: center;
+}
+
+/*Caixa de texto email*/
+.lg_email{
+    position: absolute;
+    width: 219px;
+    height: 51px;
+    border-radius: 41px;
+    top: 342px;
+    box-sizing: border-box;
+    border: 1px solid #787778;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 15px;
+    color: #787778;
+}
+
+/*Caixa de texto senha*/
+.lg_senha{
+    position: absolute;
+    width: 219px;
+    height: 51px;
+    border-radius: 41px;
+    top: 431px;
+    box-sizing: border-box;
+    border: 1px solid #787778;
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 15px;
+    color: #787778;
+}
+
+/*Check manter contato*/
+.manter_conectado{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 415px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: #560F47;
+}
+
+/*posição do entrar*/
+.entrar{
+    display: flex;
+    justify-content: center;
+}
+
+/*bt entrar*/
+.bt_entrar{
+    position: absolute;
+    width: 219px;
+    height: 51px;
+    top: 525px;
+    background: #FF7B92;
+    border-radius: 41px;
+    border: none;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+
+/*Caixa dos popups*/
+.pop_ups{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/*area do cadastro*/
+.n_tem_conta{
+    position: absolute;
+    width: 300px;
+    height: 15px;
+    top: 75px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(86, 15, 71, 0.5);
+}
+/*esqueci minha senha*/
+.esqueci_ms{
+    position: absolute;
+    width: 300px;
+    height: 15px;
+    top: 95px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(86, 15, 71, 0.5);
+}
+/*area logar com redes*/
+.logar_com{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+}
+/*texto logar*/
+.lg_com{
+    position: absolute;
+    width: 144px;
+    height: 36px;
+    top: 150px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+}
+/*lista logar*/
+.li_log{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    top: 230px;
+}
+
+/*estilo da lista*/
+.li_log{
+    list-style: none;
+}
+
+/*img face*/
+.login_fc{
+    width: 64px;
+    height: 64px;
+}
+
+/*img google*/
+.login_gg{
+    width: 73px;
+    height: 73px;
+}
+
+/*img apple*/
+.login_app{
+    width: 65px;
+    height: 65px;
+}
+/*-----------------------------INICIO DO FOOTER-------------------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 328px;
+    top: 1300px;
+    background-color: #FF8EA2;
+}
+/*lista dos sobre nos, siga-nos, contato*/
+.li_ft{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    top: 30px;
+    font-weight: 40;
+    font-size: 32px;
+    line-height: 38px;
+    color: #560F47;
+}
+/*texto sobre nos*/
+.txt_sobre_nos{
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    margin-left: 260px;
+    top: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+/*imagem sobre nos*/
+.img_sobre_nos{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    margin-left: 50px;
+}
+/*lista dos @pink diamond*/
+.a_s{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    left: 890px;
+    padding: 5px;
+    justify-content: space-around;
+    font-weight: 40;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+    top: 90px;
+}
+/* o prof q fex n sei oq é k*/
+.container{
+    min-height: 100vh;
+    position: relative;
+}
+/* posiçao das redes sociais*/
+.rede_rd{
+    list-style: none;
+    position: relative;
+}
+/*posiçao das imagens para os links*/
+.links_rd{
+    position: absolute;
+    top: 80px;
+    left: 830px;
+}
+/* tamanho das imagens*/
+.img_rd_face{
+    width: 60px;
+    height: 60px;
+}
+/* tamanho das imagens*/
+.img_rd_insta{
+    width: 60px;
+    height: 60px;
+}
+/* tamanho das imagens*/
+.img_rd_tt{
+    width: 60px;
+    height: 60px;
+}
+/*Posiçao da área dos contatos*/
+.contato{
+    position: absolute;
+    display: flex;
+    width: 28%;
+    height: 30px;
+    margin-left: 65%;
+    padding: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+/*Posição da lista de contatos*/
+.lista-cntt{
+    list-style: none;
+}
+/*ajuste dos tamanho do icone*/
+.local{
+    width: 25px;
+    height: 25px;
+}
+/*ajuste dos tamanho do icone*/
+.telefone{
+    width: 25px;
+    height: 25px;
+}
+/*ajuste dos tamanho do icone*/
+.email{
+    width: 25px;
+    height: 25px;
+}
