@@ -149,10 +149,3 @@ body {
     width: 100%;
 }
 
-div.QD_cinza {
-    display: none;
-}
-
-div.QD_cinza div:target{
-    display: flex;
-}
