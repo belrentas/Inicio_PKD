@@ -1,0 +1,158 @@
+/*IMPORT DA FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Allerta', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease-in-out;
+}
+:root {
+    --rosaForte: #EE4664;
+    --rosaEscuro: #F86A83;
+    --rosaMedio: #FF7B92;
+    --rosaClaro: #FFC0CB;
+    --rosaFundo: #FFEAED;
+    --roxo: #560F47;
+    --branco: #fff;
+    --cinzaFundo: #ECECEC;
+    --cinzaQD: #D9D9D9;
+
+}
+
+
+/*------------HEADER----------*/
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--rosaMedio);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_home {
+    height: 70px;
+}
+
+#menu {
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin-right: 13rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cor_nav {
+    color: var(--branco);
+    font-size: 20px;
+    display: flex;
+}
+
+.cor_nav:hover {
+    box-shadow: 0px 2px 0px 0px var(--branco);
+}
+
+
+#perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--branco);
+}
+
+#logo_pink {
+    margin-left: 13rem;
+    width: 200px;
+}
+
+
+
+
+/* _____________________________BODY_________________________________ */
+
+
+#img_fundo_adm{
+        
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.QD_branco{
+
+    padding-top: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#QD_branco{
+
+    background-color: var(--branco);
+    width: 1500px;
+    height: 705px;
+
+}
+
+#QD_cinza{
+
+    width: 260px;
+    height: 705px;
+    background-color: var(--cinzaQD);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#poli{
+
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    left: 434px;
+
+}
+
+.btn_qd{
+
+    height: 80px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 5px solid #BDBDBD;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+body {
+
+    background-color: var(--cinzaFundo);
+    
+}
+
+#banner_pink {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+}
+
+div.QD_cinza {
+    display: none;
+}
+
+div.QD_cinza div:target{
+    display: flex;
+}
